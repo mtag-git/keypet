@@ -1,0 +1,32 @@
+{
+  "name": "keypet - counts your words per minute",
+  "description": "your netbuddy keeps you company as you work! Keeps track of your gross wpm to boost productivity. Characters inspired by @StrayRogue + @DitzyFlama on Twitter.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches":["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["start.png","/keycat/*","/keydog/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+"permissions": ["storage", "activeTab", "scripting", "alarms"],
+"action": {
+  "default_title": "Click 4 companion!", 
+  "default_popup": "popup.html",
+  "default_icon": {
+     "128": "icon.png"
+    }
+  },
+  "icons": {
+  "128": "icon.png"
+  }
+}

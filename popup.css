@@ -1,0 +1,28 @@
+/* make it pretty */
+
+html, 
+body {
+  height: 60px; /*sizing*/
+  width: 190px;
+}
+.menu {
+  outline: #b9b9d1; /* div style */
+  display: block;
+}
+button {
+  height: 20px; /*negative space buttons*/
+  width: 180px; 
+  outline: none; 
+  margin: 2px; 
+  background-color: white;
+  border: 2px solid #b9b9d1; 
+  color: #b9b9d1; 
+  
+}
+
+button:hover{
+  background-color: #b9b9d1; /* when the mouse hovers over button -> diff style*/
+  color: white;
+}
+
+
